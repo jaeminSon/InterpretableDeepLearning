@@ -168,10 +168,10 @@ if __name__ == "__main__":
     n_data = 100
     user_answer_matrix = np.random.randint(n_classes, size=(n_users, n_data))
 
-    # estimate conditional matrix and prior matrix
+    # step 2. estimate conditional matrix and prior matrix
     v, p = estimate_conditional_prob(user_answer_matrix)
 
-    # estimate posterior
+    # step 3. estimate posterior
     post = posterior(user_answer_matrix, v, p)
 
     assert post.shape == (10, 100)
