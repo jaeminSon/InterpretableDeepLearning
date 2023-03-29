@@ -61,7 +61,7 @@ def expectation(user_answer_matrix: np.array, v: np.array, p: np.array) -> Tuple
         user_answer_matrix: K*N matrix (K: #users, N: #data)
         v: K*C*C conditional probability matrix 
         p: arraylike with length of C (prior matrix)
-    
+
     Returns
         expected posterior probability (C*N matrix) and log_likelihood (int)
     """
@@ -74,7 +74,7 @@ def expectation(user_answer_matrix: np.array, v: np.array, p: np.array) -> Tuple
     return posterior, log_likelihood
 
 
-def maximization(user_answer_matrix:np.array, posterior:np.array):
+def maximization(user_answer_matrix: np.array, posterior: np.array) -> Tuple[np.array, np.array]:
     """
     Args
         user_answer_matrix: K*N matrix (K: #users, N: #data)
@@ -134,7 +134,7 @@ def estimate_conditional_prob(user_answer_matrix: np.array, N_iters: int = 10, h
     return v, p
 
 
-def posterior(user_answer_matrix, v, p):
+def posterior(user_answer_matrix, v, p) -> np.array:
     """
     return 
 
