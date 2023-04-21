@@ -1,6 +1,6 @@
 # Code snippets for "an interpretable and interactive deep learning architecture"
 
-[Original Paper](https://www.nature.com/articles/s41598-023-32518-3)
+### An interpretable and interactive deep learning algorithm for a clinically applicable retinal fundus diagnosis system by modelling finding-disease relationship [(link)](https://www.nature.com/articles/s41598-023-32518-3)
 
 ### Codes
 1. Naive Bayes Computation for training label estimation
